@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Products</h2>
+    <h2>Product {{ id }}</h2>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, fugiat
       provident. Fuga officia, sit harum perspiciatis nulla molestias, neque
@@ -10,6 +10,8 @@
 </template>
 
 <script setup>
+const { id } = useRoute().params;
+
 definePageMeta({
   layout: "products",
 });
