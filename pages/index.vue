@@ -9,7 +9,17 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+useHead({
+  title: "Nuxt Dojo | Merch Store",
+  meta: [
+    {
+      name: "description",
+      content: "This is a merch store built with Nuxt.js and Tailwind CSS.",
+    },
+  ],
+});
+</script>
 
 <style scoped>
 h2 {
